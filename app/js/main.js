@@ -1,7 +1,8 @@
 $(function(){
-  /* подключаем slick слайдер */
+  /* подключаем slick слайдер, указываем настройки */
   $('.header__slider').slick({
-    infinite: true
+    infinite: true,
+    fade: true 
   });
 
   
