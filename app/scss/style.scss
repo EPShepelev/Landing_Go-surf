@@ -189,7 +189,24 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 750px;
+  &__inner{
+    min-height: 750px;
+    background: rgba(#1C2121, .85);
+    position: relative;
+  }
 }
+.surf-slider{
+  padding-top: 110px;
+  .slider-arrows{
+    top: 50px;
+    opacity: 0.25;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+.surf-box__inner-title{}
+.surf-box__inner-location{}
 
 
 @keyframes animation-dash {
