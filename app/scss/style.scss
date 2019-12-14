@@ -173,7 +173,6 @@
   animation: animation-dash 3s infinite 6s;
 }
 .surf{
-  padding: 160px 0 120px;
   background-image: url(../img/surf-bg.svg);
   background-position:right 200px;
   background-repeat: no-repeat;
@@ -412,6 +411,31 @@
       left: auto;
       right: 0;
     }
+  }
+}
+.travel{
+  background-image: url(../img/travel-bg.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+.travel-slider{
+  &__head{
+    background-repeat: no-repeat;
+    background-position: top left;
+    min-height: 780px;
+  }
+  &__descr{
+    padding-left: 132px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    min-height: 300px;
+    img{
+      padding-left: 24px;
+    }
+  }
+  &__subtitle{
+    text-align: right;
+    padding: 132px 80px 0 0;
   }
 }
 
