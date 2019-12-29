@@ -415,6 +415,9 @@
 }
 .holder{
   background-image: url(../img/travel-cocktail.png);
+  &.sleep{
+    background-image: url(../img/frangipani.png);
+  }
   background-position: bottom right;
   background-repeat: no-repeat;
   .slider-arrows{
@@ -436,10 +439,14 @@
     margin-top: -230px;
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: contain;
     min-height: 320px;
     .descr__head{
       position: relative;
-      padding-right: 215px;
+      &.descr__head-sleep{
+        padding-right: 215px;
+      }
+      padding-right: 68px;
       img{
         position: absolute;
         right: 0;
@@ -449,10 +456,6 @@
         position: absolute;
         right: 0;
         top: 0;
-        li{
-          display: inline-block;
-          margin-left: -25px;
-        }
         img{
           position: static;
         }
@@ -507,6 +510,187 @@
     bottom: -8px;
     right: 0;
   }
+}
+.shop{
+  background-image: url(../img/shop-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  .slider-arrows{
+    opacity: 0.25;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+.shop__slider{
+  padding-left: 132px;
+}
+.shop__slider-inner{
+  display: flex;
+}
+.shop__slider-info{
+  min-width: 480px;
+  margin-right: 40px;
+  padding-top: 150px;
+}
+.descr__head-shop{
+  max-width: 340px;
+  margin-bottom: 47px;
+}
+.shop__star-list{
+  margin-left: -9px;
+}
+.shop__slider-price{
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 64px;
+  sup{
+    font-size: 18px;
+    padding-left: 2px;
+  }
+}
+.shop__slider-content{
+  padding-left: 170px;
+  display: flex;
+  align-items: flex-end;
+}
+.shop__extras{
+  padding-left: 150px;
+}
+.shop_extras-inner{
+  display: flex;
+}
+.shop_extras-title{
+  font-weight: 80;
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+.shop_extras-box{
+  text-align: center;
+  margin-right: 57px;
+}
+.shop_extras-img{
+  min-height: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.shop_extras-name{
+  font-size: 18px;
+  line-height: 22px;
+  opacity: 0.5;
+  letter-spacing: 8px;
+  margin-bottom: 16px;
+}
+.shop_extras-price{
+  font-weight: 800;
+  line-height: 40px;
+  font-size: 18px;
+}
+.surfboard{
+  position: relative;
+}
+.surfboard-box{
+  position: absolute;
+}
+.surfboard__position--1{
+  right: 40px;
+  top: 215px;
+}
+.surfboard__position--2{
+  left: -6;
+  top: 313px;
+}
+.surfboard__position--3{
+  bottom: 70px;
+  left: 52px;
+  .surfboard-box-content{
+    padding-left: 0;
+    padding-right: 104px;
+    top: -25px;
+    left: -400px; 
+    &::before{
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 1px;
+      background-color: #FFFFFF;
+      right: 0;
+      left: auto;
+      top: 50%;
+    }
+  }
+}
+.surfboard-box__circle{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #fff;
+  cursor: pointer;
+  &.active{
+    .circle-row{
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+}
+.circle-row{
+  background-color: $green;
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  & + .circle-row{
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+.surfboard-box__circle.active + .surfboard-box-content{
+  display: block;
+}
+.surfboard-box-content{
+  display: none;
+  position: absolute;
+  width: 359px;
+  font-weight: 800;
+  line-height: 24px;
+  font-size: 24px;
+  padding-left: 104px;
+  top: -25px;
+  left: 40px; 
+  &::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background-color: #FFFFFF;
+    left: 0;
+    top: 50%;
+  }
+}
+.footer{
+  text-align: center;
+  padding: 285px 0 34px;
+  .btn{
+    span{
+      padding: 17px 17px 15px;
+      &::after{
+        display: none;
+      }
+    }
+  }
+}
+.footer__copy{
+  padding-top: 27px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1.05px;
+  opacity: 0.5;
 }
 
 @keyframes animation-dash {
