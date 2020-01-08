@@ -12,7 +12,13 @@ $(function(){
   $('.slider-dotshead').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
-    asNavFor: '.header__slider'
+    asNavFor: '.header__slider',
+    responsive: [
+      {
+        breakpoint: 961,
+        settings: "unslick"
+      }
+    ]
   });
 
   $('.surf-slider').slick({
@@ -20,11 +26,19 @@ $(function(){
     slidesToScroll: 1,
     prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrow-left.svg" alt="arrow-left image">', 
     nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrow-right.svg" alt="arrow-right image">',
-    asNavFor: '.slider-map'
+    asNavFor: '.slider-map',
+    responsive: [
+      {
+        breakpoint: 1210,
+        settings: {
+          slidesToShow: 3
+        }
+      }
+    ]
   });
 
   $('.slider-map').slick({
-    slidesToShow: 8,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     asNavFor: '.surf-slider',
