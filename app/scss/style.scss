@@ -216,7 +216,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 750px;
   }
   &__inner{
     min-height: 750px;
@@ -393,7 +392,7 @@
   .slider-dots__content{
     transform: translateX(0);
     &::before{
-      left: -.5px;
+      left: -0.5px;
     }
   }
 }
@@ -441,7 +440,7 @@
     transform: translateX(-262px);
     &::before{
       left: auto;
-      right: .5px;
+      right: 0.5px;
     }
   }
 }
